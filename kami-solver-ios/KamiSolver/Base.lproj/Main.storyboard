@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KamiSolver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Id0-Qm-uwA">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Bhf-a5-f0a"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Lsu-1e-Tba"/>
+                                    <barButtonItem title="Open" id="Nj0-Du-0Qh">
+                                        <connections>
+                                            <action selector="openButtonClicked:" destination="BYZ-38-t0r" id="NBT-7n-Si7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Yfe-F6-96r"/>
+                                    <barButtonItem title="8 Moves " id="OBP-Wu-hJ8"/>
+                                    <barButtonItem style="plain" id="z1d-XH-oBp">
+                                        <stepper key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minimumValue="1" maximumValue="100" id="ogK-Bg-f3P">
+                                            <rect key="frame" x="180" y="7.5" width="94" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="solutionLengthChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="YVm-fr-fbh"/>
+                                            </connections>
+                                        </stepper>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="BZL-zN-wUS"/>
+                                    <barButtonItem title="Solve" id="1v7-J6-Pxn">
+                                        <connections>
+                                            <action selector="solveButtonClicked:" destination="BYZ-38-t0r" id="YPe-zk-Psb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bB5-nZ-Vv5"/>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2DS-qo-y3B">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Take a screenshot of a puzzle to solve" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4Q-Ql-vm6">
+                                <rect key="frame" x="33" y="126" width="309" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Open the screenshot" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvS-my-6Aa">
+                                <rect key="frame" x="33" y="253" width="309" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MvS-my-6Aa" firstAttribute="top" secondItem="D4Q-Ql-vm6" secondAttribute="bottom" constant="60" id="0uH-hO-IUX"/>
+                            <constraint firstItem="2DS-qo-y3B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7GE-gb-8fF"/>
+                            <constraint firstItem="2DS-qo-y3B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GMZ-lp-W4g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Id0-Qm-uwA" secondAttribute="bottom" id="Gnn-bu-a6n"/>
+                            <constraint firstItem="D4Q-Ql-vm6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="HcK-tq-cWR"/>
+                            <constraint firstItem="D4Q-Ql-vm6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="106" id="bmQ-OY-Bpd"/>
+                            <constraint firstItem="MvS-my-6Aa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="lpa-Jw-g9h"/>
+                            <constraint firstItem="Id0-Qm-uwA" firstAttribute="top" secondItem="2DS-qo-y3B" secondAttribute="bottom" id="mNc-o2-SqP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MvS-my-6Aa" secondAttribute="trailing" constant="17" id="pdt-Lf-VCa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D4Q-Ql-vm6" secondAttribute="trailing" constant="17" id="pzq-qA-90g"/>
+                            <constraint firstItem="Id0-Qm-uwA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sXQ-VR-68R"/>
+                            <constraint firstAttribute="trailing" secondItem="Id0-Qm-uwA" secondAttribute="trailing" id="tqV-07-akh"/>
+                            <constraint firstAttribute="trailing" secondItem="2DS-qo-y3B" secondAttribute="trailing" id="v5j-aI-AF6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnOpen" destination="Nj0-Du-0Qh" id="rrq-ns-48H"/>
+                        <outlet property="btnSolve" destination="1v7-J6-Pxn" id="IXX-kE-QEo"/>
+                        <outlet property="imgView" destination="2DS-qo-y3B" id="cUj-UL-ZWU"/>
+                        <outlet property="lblInstructions1" destination="D4Q-Ql-vm6" id="oPK-6w-9ll"/>
+                        <outlet property="lblInstructions2" destination="MvS-my-6Aa" id="LYA-Sv-7GA"/>
+                        <outlet property="lblMoves" destination="OBP-Wu-hJ8" id="y3Z-4j-UWB"/>
+                        <outlet property="stpSolutionLength" destination="ogK-Bg-f3P" id="53l-8r-SW3"/>
+                        <segue destination="H3h-85-P8i" kind="show" identifier="ShowSolution" id="V1r-TF-ysM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197.59999999999999" y="-435.83208395802103"/>
+        </scene>
+        <!--Solution View Controller-->
+        <scene sceneID="zOr-dB-geg">
+            <objects>
+                <viewController storyboardIdentifier="SolutionView" id="H3h-85-P8i" customClass="SolutionViewController" customModule="KamiSolver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RUZ-IQ-6to"/>
+                        <viewControllerLayoutGuide type="bottom" id="2X7-cn-nsN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="42L-uE-djv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEx-au-xtG">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Oyy-tz-2HV"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Done" id="ELa-NK-VK8">
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="HBj-ci-Ech"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sMr-kA-XV6"/>
+                                    <barButtonItem systemItem="fastForward" id="ZHo-b5-VFH">
+                                        <connections>
+                                            <action selector="onFastForward:" destination="H3h-85-P8i" id="nMG-XB-ffc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4x-vN-Nh6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <connections>
+                                    <segue destination="d9x-wu-4So" kind="embed" identifier="Embed" id="6m3-ce-K5P"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U4x-vN-Nh6" firstAttribute="leading" secondItem="42L-uE-djv" secondAttribute="leading" id="1aT-XC-WEv"/>
+                            <constraint firstAttribute="trailing" secondItem="U4x-vN-Nh6" secondAttribute="trailing" id="6DD-Dq-rBg"/>
+                            <constraint firstItem="2X7-cn-nsN" firstAttribute="top" secondItem="YEx-au-xtG" secondAttribute="bottom" id="9Y6-GR-pJP"/>
+                            <constraint firstItem="YEx-au-xtG" firstAttribute="leading" secondItem="42L-uE-djv" secondAttribute="leading" id="9li-Tc-zRg"/>
+                            <constraint firstAttribute="trailing" secondItem="YEx-au-xtG" secondAttribute="trailing" id="NFk-TB-418"/>
+                            <constraint firstItem="YEx-au-xtG" firstAttribute="top" secondItem="U4x-vN-Nh6" secondAttribute="bottom" id="SdN-10-oMM"/>
+                            <constraint firstItem="U4x-vN-Nh6" firstAttribute="top" secondItem="RUZ-IQ-6to" secondAttribute="bottom" id="xmd-jC-kNz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageViewContainer" destination="U4x-vN-Nh6" id="LlA-J7-gnh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qad-ac-8lR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="-1132"/>
+        </scene>
+        <!--Solution Tile View Controller-->
+        <scene sceneID="9qj-0o-13H">
+            <objects>
+                <viewController storyboardIdentifier="SolutionTileView" id="vUr-ZB-MHv" customClass="SolutionTileViewController" customModule="KamiSolver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U8G-SM-GZZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="5xG-Dt-1Uh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e2D-7o-ttZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dDD-t8-wOC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dDD-t8-wOC" firstAttribute="top" secondItem="e2D-7o-ttZ" secondAttribute="top" id="D5B-Ll-5Rn"/>
+                            <constraint firstItem="dDD-t8-wOC" firstAttribute="leading" secondItem="e2D-7o-ttZ" secondAttribute="leading" id="DM5-1P-SZP"/>
+                            <constraint firstItem="5xG-Dt-1Uh" firstAttribute="top" secondItem="dDD-t8-wOC" secondAttribute="bottom" id="JaX-wO-hUF"/>
+                            <constraint firstAttribute="trailing" secondItem="dDD-t8-wOC" secondAttribute="trailing" id="kxM-ey-ebI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgSolutionTile" destination="dDD-t8-wOC" id="Jc2-dH-lCJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3F-Zq-AF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2552.8000000000002" y="-445.72713643178412"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="Wh6-4g-D0y">
+            <objects>
+                <pageViewController storyboardIdentifier="SolutionPageView" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="overCurrentContext" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="d9x-wu-4So" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YKB-Cp-Jv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1506" y="108"/>
+        </scene>
+    </scenes>
+</document>

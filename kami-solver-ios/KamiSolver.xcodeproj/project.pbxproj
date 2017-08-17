@@ -1,0 +1,1135 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63150F851F2927B300992FB1 /* SolutionTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63150F841F2927B300992FB1 /* SolutionTileViewController.swift */; };
+		63150F871F295DD000992FB1 /* SolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63150F861F295DD000992FB1 /* SolutionViewController.swift */; };
+		634D3B001F02FA4F0032A676 /* IosImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634D3AFF1F02FA4F0032A676 /* IosImage.swift */; };
+		634D3B021F041EBA0032A676 /* RGBA32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634D3B011F041EBA0032A676 /* RGBA32.swift */; };
+		634D3B051F042F590032A676 /* KamiImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 634D3B031F042F590032A676 /* KamiImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		634D3B061F042F590032A676 /* KamiImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 634D3B041F042F590032A676 /* KamiImage.m */; };
+		636A6C621F2E6DB900F7B460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636A6C611F2E6DB900F7B460 /* Assets.xcassets */; };
+		636F83E51F02B39100C43D95 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 636F83DE1F02924200C43D95 /* libiconv.tbd */; };
+		636F83E61F02B8C000C43D95 /* RookAndPawn in Resources */ = {isa = PBXBuildFile; fileRef = 63FAF5901EFC9ACF007B810E /* RookAndPawn */; };
+		63B423A31F24F16900F4C2DB /* Arrow.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B4238B1F24F16900F4C2DB /* Arrow.h */; };
+		63B423A41F24F16900F4C2DB /* Arrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B4238C1F24F16900F4C2DB /* Arrow.m */; };
+		63B423A51F24F16900F4C2DB /* Kami1NodeGeometryProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B4238D1F24F16900F4C2DB /* Kami1NodeGeometryProvider.h */; };
+		63B423A61F24F16900F4C2DB /* Kami1NodeGeometryProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B4238E1F24F16900F4C2DB /* Kami1NodeGeometryProvider.m */; };
+		63B423A71F24F16900F4C2DB /* NodeGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B4238F1F24F16900F4C2DB /* NodeGeometry.h */; };
+		63B423A81F24F16900F4C2DB /* NodeGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B423901F24F16900F4C2DB /* NodeGeometry.m */; };
+		63B423A91F24F16900F4C2DB /* NodeGeometryProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B423911F24F16900F4C2DB /* NodeGeometryProvider.h */; };
+		63B423AA1F24F16900F4C2DB /* NodeGeometryProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B423921F24F16900F4C2DB /* NodeGeometryProvider.m */; };
+		63B423AB1F24F16900F4C2DB /* Point.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B423931F24F16900F4C2DB /* Point.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B423AC1F24F16900F4C2DB /* Point.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B423941F24F16900F4C2DB /* Point.m */; };
+		63B423AD1F24F16900F4C2DB /* PointList.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B423951F24F16900F4C2DB /* PointList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B423AE1F24F16900F4C2DB /* PointList.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B423961F24F16900F4C2DB /* PointList.m */; };
+		63B423AF1F24F16900F4C2DB /* Rectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B423971F24F16900F4C2DB /* Rectangle.h */; };
+		63B423B01F24F16900F4C2DB /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B423981F24F16900F4C2DB /* Rectangle.m */; };
+		63B423B11F24F16900F4C2DB /* SolutionGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B423991F24F16900F4C2DB /* SolutionGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B423B21F24F16900F4C2DB /* SolutionGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B4239A1F24F16900F4C2DB /* SolutionGeometry.m */; };
+		63B423B31F24F16900F4C2DB /* SolutionGeometryList.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B4239B1F24F16900F4C2DB /* SolutionGeometryList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B423B41F24F16900F4C2DB /* SolutionGeometryList.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B4239C1F24F16900F4C2DB /* SolutionGeometryList.m */; };
+		63B423B51F24F16900F4C2DB /* SolutionGeometryMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B4239D1F24F16900F4C2DB /* SolutionGeometryMaker.h */; };
+		63B423B61F24F16900F4C2DB /* SolutionGeometryMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B4239E1F24F16900F4C2DB /* SolutionGeometryMaker.m */; };
+		63B423B71F24F16900F4C2DB /* SolutionState.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B4239F1F24F16900F4C2DB /* SolutionState.h */; };
+		63B423B81F24F16900F4C2DB /* SolutionState.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B423A01F24F16900F4C2DB /* SolutionState.m */; };
+		63B423B91F24F16900F4C2DB /* VisualGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B423A11F24F16900F4C2DB /* VisualGraph.h */; };
+		63B423BA1F24F16900F4C2DB /* VisualGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B423A21F24F16900F4C2DB /* VisualGraph.m */; };
+		63B423BD1F267B4400F4C2DB /* ErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B423BB1F267B4400F4C2DB /* ErrorHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B423BE1F267B4400F4C2DB /* ErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B423BC1F267B4400F4C2DB /* ErrorHandler.m */; };
+		63B423C11F26BB2C00F4C2DB /* PaletteList.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B423BF1F26BB2C00F4C2DB /* PaletteList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B423C21F26BB2C00F4C2DB /* PaletteList.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B423C01F26BB2C00F4C2DB /* PaletteList.m */; };
+		63B423C51F27A8FF00F4C2DB /* Kami2NodeGeometryProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B423C31F27A8FF00F4C2DB /* Kami2NodeGeometryProvider.h */; };
+		63B423C61F27A8FF00F4C2DB /* Kami2NodeGeometryProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B423C41F27A8FF00F4C2DB /* Kami2NodeGeometryProvider.m */; };
+		63E543391F049A8D007F5846 /* ImageSelectedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E543351F049A8D007F5846 /* ImageSelectedEvent.h */; };
+		63E5433A1F049A8D007F5846 /* ImageSelectedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E543361F049A8D007F5846 /* ImageSelectedEvent.m */; };
+		63E5433B1F049A8D007F5846 /* StartSolverEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E543371F049A8D007F5846 /* StartSolverEvent.h */; };
+		63E5433C1F049A8D007F5846 /* StartSolverEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E543381F049A8D007F5846 /* StartSolverEvent.m */; };
+		63FAF4B11EFC9320007B810E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4B01EFC9320007B810E /* AppDelegate.swift */; };
+		63FAF4B31EFC9320007B810E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4B21EFC9320007B810E /* ViewController.swift */; };
+		63FAF4B61EFC9320007B810E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FAF4B41EFC9320007B810E /* Main.storyboard */; };
+		63FAF4BB1EFC9320007B810E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FAF4B91EFC9320007B810E /* LaunchScreen.storyboard */; };
+		63FAF4CB1EFC934A007B810E /* KamiSolverCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4C91EFC934A007B810E /* KamiSolverCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63FAF4CE1EFC934A007B810E /* KamiSolverCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAF4C71EFC934A007B810E /* KamiSolverCore.framework */; };
+		63FAF4CF1EFC934A007B810E /* KamiSolverCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAF4C71EFC934A007B810E /* KamiSolverCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		63FAF4D51EFC936A007B810E /* Settings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 63FAF4D41EFC936A007B810E /* Settings.xcconfig */; };
+		63FAF52C1EFC93CA007B810E /* ClickHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4D61EFC93CA007B810E /* ClickHandler.h */; };
+		63FAF52D1EFC93CA007B810E /* ClickHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4D71EFC93CA007B810E /* ClickHandler.m */; };
+		63FAF52E1EFC93CA007B810E /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4D81EFC93CA007B810E /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63FAF52F1EFC93CA007B810E /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4D91EFC93CA007B810E /* Color.m */; };
+		63FAF5301EFC93CA007B810E /* ColorCharacteristic.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4DA1EFC93CA007B810E /* ColorCharacteristic.h */; };
+		63FAF5311EFC93CA007B810E /* ColorCharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4DB1EFC93CA007B810E /* ColorCharacteristic.m */; };
+		63FAF5321EFC93CA007B810E /* ConnectivityProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4DC1EFC93CA007B810E /* ConnectivityProvider.h */; };
+		63FAF5331EFC93CA007B810E /* ConnectivityProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4DD1EFC93CA007B810E /* ConnectivityProvider.m */; };
+		63FAF5341EFC93CA007B810E /* Convoluter.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4DE1EFC93CA007B810E /* Convoluter.h */; };
+		63FAF5351EFC93CA007B810E /* Convoluter_Override.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4DF1EFC93CA007B810E /* Convoluter_Override.m */; };
+		63FAF5361EFC93CA007B810E /* Device.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4E01EFC93CA007B810E /* Device.h */; };
+		63FAF5371EFC93CA007B810E /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4E11EFC93CA007B810E /* Device.m */; };
+		63FAF5381EFC93CA007B810E /* DumbSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4E21EFC93CA007B810E /* DumbSearch.h */; };
+		63FAF5391EFC93CA007B810E /* DumbSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4E31EFC93CA007B810E /* DumbSearch.m */; };
+		63FAF53A1EFC93CA007B810E /* EdgeDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4E41EFC93CA007B810E /* EdgeDetector.h */; };
+		63FAF53B1EFC93CA007B810E /* EdgeDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4E51EFC93CA007B810E /* EdgeDetector.m */; };
+		63FAF53C1EFC93CA007B810E /* EdgeMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4E61EFC93CA007B810E /* EdgeMap.h */; };
+		63FAF53D1EFC93CA007B810E /* EdgeMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4E71EFC93CA007B810E /* EdgeMap.m */; };
+		63FAF53E1EFC93CA007B810E /* EventPump.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4E81EFC93CA007B810E /* EventPump.h */; };
+		63FAF53F1EFC93CA007B810E /* EventPump.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4E91EFC93CA007B810E /* EventPump.m */; };
+		63FAF5401EFC93CA007B810E /* FastGraph_Override.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4EA1EFC93CA007B810E /* FastGraph_Override.h */; };
+		63FAF5411EFC93CA007B810E /* FastGraph_Override.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4EB1EFC93CA007B810E /* FastGraph_Override.m */; };
+		63FAF5421EFC93CA007B810E /* GaussianBlurrer.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4EC1EFC93CA007B810E /* GaussianBlurrer.h */; };
+		63FAF5431EFC93CA007B810E /* GaussianBlurrer.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4ED1EFC93CA007B810E /* GaussianBlurrer.m */; };
+		63FAF5441EFC93CA007B810E /* Graph.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4EE1EFC93CA007B810E /* Graph.h */; };
+		63FAF5451EFC93CA007B810E /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4EF1EFC93CA007B810E /* Graph.m */; };
+		63FAF5461EFC93CA007B810E /* GraphExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4F01EFC93CA007B810E /* GraphExtractor.h */; };
+		63FAF5471EFC93CA007B810E /* GraphExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4F11EFC93CA007B810E /* GraphExtractor.m */; };
+		63FAF5481EFC93CA007B810E /* HandlerRegistration.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4F21EFC93CA007B810E /* HandlerRegistration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63FAF5491EFC93CA007B810E /* HandlerRegistration.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4F31EFC93CA007B810E /* HandlerRegistration.m */; };
+		63FAF54A1EFC93CA007B810E /* HasClickHandlers.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4F41EFC93CA007B810E /* HasClickHandlers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63FAF54B1EFC93CA007B810E /* HasClickHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4F51EFC93CA007B810E /* HasClickHandlers.m */; };
+		63FAF54C1EFC93CA007B810E /* HasImageSelectedHandlers.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4F61EFC93CA007B810E /* HasImageSelectedHandlers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63FAF54D1EFC93CA007B810E /* HasImageSelectedHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4F71EFC93CA007B810E /* HasImageSelectedHandlers.m */; };
+		63FAF54E1EFC93CA007B810E /* HasInteger.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4F81EFC93CA007B810E /* HasInteger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63FAF54F1EFC93CA007B810E /* HasInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4F91EFC93CA007B810E /* HasInteger.m */; };
+		63FAF5501EFC93CA007B810E /* HasText.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4FA1EFC93CA007B810E /* HasText.h */; };
+		63FAF5511EFC93CA007B810E /* HasText.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4FB1EFC93CA007B810E /* HasText.m */; };
+		63FAF5521EFC93CA007B810E /* HudOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4FC1EFC93CA007B810E /* HudOrientation.h */; };
+		63FAF5531EFC93CA007B810E /* HudOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4FD1EFC93CA007B810E /* HudOrientation.m */; };
+		63FAF5541EFC93CA007B810E /* HudParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF4FE1EFC93CA007B810E /* HudParser.h */; };
+		63FAF5551EFC93CA007B810E /* HudParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF4FF1EFC93CA007B810E /* HudParser.m */; };
+		63FAF5581EFC93CA007B810E /* ImageCharacteristic.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5021EFC93CA007B810E /* ImageCharacteristic.h */; };
+		63FAF5591EFC93CA007B810E /* ImageCharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5031EFC93CA007B810E /* ImageCharacteristic.m */; };
+		63FAF55A1EFC93CA007B810E /* ImageSelectedHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5041EFC93CA007B810E /* ImageSelectedHandler.h */; };
+		63FAF55B1EFC93CA007B810E /* ImageSelectedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5051EFC93CA007B810E /* ImageSelectedHandler.m */; };
+		63FAF55E1EFC93CA007B810E /* Kami1ConnectivityProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5081EFC93CA007B810E /* Kami1ConnectivityProvider.h */; };
+		63FAF55F1EFC93CA007B810E /* Kami1ConnectivityProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5091EFC93CA007B810E /* Kami1ConnectivityProvider.m */; };
+		63FAF5601EFC93CA007B810E /* Kami1PuzzleAreaClassifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF50A1EFC93CA007B810E /* Kami1PuzzleAreaClassifier.h */; };
+		63FAF5611EFC93CA007B810E /* Kami1PuzzleAreaClassifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF50B1EFC93CA007B810E /* Kami1PuzzleAreaClassifier.m */; };
+		63FAF5621EFC93CA007B810E /* Kami2ConnectivityProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF50C1EFC93CA007B810E /* Kami2ConnectivityProvider.h */; };
+		63FAF5631EFC93CA007B810E /* Kami2ConnectivityProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF50D1EFC93CA007B810E /* Kami2ConnectivityProvider.m */; };
+		63FAF5641EFC93CA007B810E /* Kami2PuzzleAreaClassifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF50E1EFC93CA007B810E /* Kami2PuzzleAreaClassifier.h */; };
+		63FAF5651EFC93CA007B810E /* Kami2PuzzleAreaClassifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF50F1EFC93CA007B810E /* Kami2PuzzleAreaClassifier.m */; };
+		63FAF5661EFC93CA007B810E /* KamiSolverPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5101EFC93CA007B810E /* KamiSolverPresenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63FAF5671EFC93CA007B810E /* KamiSolverPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5111EFC93CA007B810E /* KamiSolverPresenter.m */; };
+		63FAF5681EFC93CA007B810E /* KamiSolverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5121EFC93CA007B810E /* KamiSolverView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63FAF5691EFC93CA007B810E /* KamiSolverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5131EFC93CA007B810E /* KamiSolverView.m */; };
+		63FAF56A1EFC93CA007B810E /* KamiVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5141EFC93CA007B810E /* KamiVersion.h */; };
+		63FAF56B1EFC93CA007B810E /* KamiVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5151EFC93CA007B810E /* KamiVersion.m */; };
+		63FAF56C1EFC93CA007B810E /* KMeansClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5161EFC93CA007B810E /* KMeansClusterer.h */; };
+		63FAF56D1EFC93CA007B810E /* KMeansClusterer.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5171EFC93CA007B810E /* KMeansClusterer.m */; };
+		63FAF56E1EFC93CA007B810E /* Move.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5181EFC93CA007B810E /* Move.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63FAF56F1EFC93CA007B810E /* Move.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5191EFC93CA007B810E /* Move.m */; };
+		63FAF5701EFC93CA007B810E /* Palette.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF51A1EFC93CA007B810E /* Palette.h */; };
+		63FAF5711EFC93CA007B810E /* Palette.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF51B1EFC93CA007B810E /* Palette.m */; };
+		63FAF5721EFC93CA007B810E /* ParseException.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF51C1EFC93CA007B810E /* ParseException.h */; };
+		63FAF5731EFC93CA007B810E /* ParseException.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF51D1EFC93CA007B810E /* ParseException.m */; };
+		63FAF5741EFC93CA007B810E /* PathSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF51E1EFC93CA007B810E /* PathSet.h */; };
+		63FAF5751EFC93CA007B810E /* PathSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF51F1EFC93CA007B810E /* PathSet.m */; };
+		63FAF5761EFC93CA007B810E /* PlayAreaDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5201EFC93CA007B810E /* PlayAreaDetector.h */; };
+		63FAF5771EFC93CA007B810E /* PlayAreaDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5211EFC93CA007B810E /* PlayAreaDetector.m */; };
+		63FAF5781EFC93CA007B810E /* PuzzleContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5221EFC93CA007B810E /* PuzzleContext.h */; };
+		63FAF5791EFC93CA007B810E /* PuzzleContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5231EFC93CA007B810E /* PuzzleContext.m */; };
+		63FAF57A1EFC93CA007B810E /* PuzzleParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5241EFC93CA007B810E /* PuzzleParser.h */; };
+		63FAF57B1EFC93CA007B810E /* PuzzleParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5251EFC93CA007B810E /* PuzzleParser.m */; };
+		63FAF57C1EFC93CA007B810E /* Search.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5261EFC93CA007B810E /* Search.h */; };
+		63FAF57D1EFC93CA007B810E /* Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5271EFC93CA007B810E /* Search.m */; };
+		63FAF57E1EFC93CA007B810E /* VersionDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF5281EFC93CA007B810E /* VersionDetector.h */; };
+		63FAF57F1EFC93CA007B810E /* VersionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF5291EFC93CA007B810E /* VersionDetector.m */; };
+		63FAF5801EFC93CA007B810E /* XMeansClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FAF52A1EFC93CA007B810E /* XMeansClusterer.h */; };
+		63FAF5811EFC93CA007B810E /* XMeansClusterer.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF52B1EFC93CA007B810E /* XMeansClusterer.m */; };
+		63FAF5841EFC9595007B810E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAF5831EFC9595007B810E /* UIKit.framework */; };
+		63FAF5861EFC95D1007B810E /* JSR305.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAF5851EFC95D1007B810E /* JSR305.framework */; };
+		63FAF5881EFC95DF007B810E /* Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAF5871EFC95DF007B810E /* Guava.framework */; };
+		63FAF58A1EFC960C007B810E /* JRE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAF5891EFC960C007B810E /* JRE.framework */; };
+		63FAF58B1EFC9683007B810E /* JRE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAF5891EFC960C007B810E /* JRE.framework */; };
+		63FAF58C1EFC96A3007B810E /* Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAF5871EFC95DF007B810E /* Guava.framework */; };
+		63FAF58F1EFC98FB007B810E /* RookAndPawn.svg in Resources */ = {isa = PBXBuildFile; fileRef = 63FAF58E1EFC98FB007B810E /* RookAndPawn.svg */; };
+		B12784F1A4FA28F044AA3279 /* Pods_KamiSolverCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA0C5157E50415DF267FC3B /* Pods_KamiSolverCore.framework */; };
+		F87654561DF2A5F5F7F61926 /* Pods_KamiSolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB88B29FB41FCD6514503FA /* Pods_KamiSolver.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63FAF4CC1EFC934A007B810E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63FAF4A51EFC9320007B810E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63FAF4C61EFC934A007B810E;
+			remoteInfo = KamiSolverCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63FAF4D31EFC934A007B810E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				63FAF4CF1EFC934A007B810E /* KamiSolverCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0CA0C5157E50415DF267FC3B /* Pods_KamiSolverCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KamiSolverCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BC02BA62C900414BE0E6341 /* Pods-KamiSolver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KamiSolver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KamiSolver/Pods-KamiSolver.debug.xcconfig"; sourceTree = "<group>"; };
+		63150F841F2927B300992FB1 /* SolutionTileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolutionTileViewController.swift; sourceTree = "<group>"; };
+		63150F861F295DD000992FB1 /* SolutionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolutionViewController.swift; sourceTree = "<group>"; };
+		634D3AFF1F02FA4F0032A676 /* IosImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = IosImage.swift; sourceTree = "<group>"; };
+		634D3B011F041EBA0032A676 /* RGBA32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBA32.swift; sourceTree = "<group>"; };
+		634D3B031F042F590032A676 /* KamiImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KamiImage.h; sourceTree = "<group>"; };
+		634D3B041F042F590032A676 /* KamiImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KamiImage.m; sourceTree = "<group>"; };
+		636A6C611F2E6DB900F7B460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		636F83DC1F02921E00C43D95 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		636F83DE1F02924200C43D95 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		636F83E11F02A8FB00C43D95 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		636F83E31F02A9B100C43D95 /* DerivedData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DerivedData; path = ../../../../Library/Developer/Xcode/DerivedData; sourceTree = "<group>"; };
+		63B4238B1F24F16900F4C2DB /* Arrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arrow.h; sourceTree = "<group>"; };
+		63B4238C1F24F16900F4C2DB /* Arrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrow.m; sourceTree = "<group>"; };
+		63B4238D1F24F16900F4C2DB /* Kami1NodeGeometryProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kami1NodeGeometryProvider.h; sourceTree = "<group>"; };
+		63B4238E1F24F16900F4C2DB /* Kami1NodeGeometryProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kami1NodeGeometryProvider.m; sourceTree = "<group>"; };
+		63B4238F1F24F16900F4C2DB /* NodeGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeGeometry.h; sourceTree = "<group>"; };
+		63B423901F24F16900F4C2DB /* NodeGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeGeometry.m; sourceTree = "<group>"; };
+		63B423911F24F16900F4C2DB /* NodeGeometryProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeGeometryProvider.h; sourceTree = "<group>"; };
+		63B423921F24F16900F4C2DB /* NodeGeometryProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeGeometryProvider.m; sourceTree = "<group>"; };
+		63B423931F24F16900F4C2DB /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
+		63B423941F24F16900F4C2DB /* Point.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Point.m; sourceTree = "<group>"; };
+		63B423951F24F16900F4C2DB /* PointList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointList.h; sourceTree = "<group>"; };
+		63B423961F24F16900F4C2DB /* PointList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointList.m; sourceTree = "<group>"; };
+		63B423971F24F16900F4C2DB /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		63B423981F24F16900F4C2DB /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		63B423991F24F16900F4C2DB /* SolutionGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolutionGeometry.h; sourceTree = "<group>"; };
+		63B4239A1F24F16900F4C2DB /* SolutionGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolutionGeometry.m; sourceTree = "<group>"; };
+		63B4239B1F24F16900F4C2DB /* SolutionGeometryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolutionGeometryList.h; sourceTree = "<group>"; };
+		63B4239C1F24F16900F4C2DB /* SolutionGeometryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolutionGeometryList.m; sourceTree = "<group>"; };
+		63B4239D1F24F16900F4C2DB /* SolutionGeometryMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolutionGeometryMaker.h; sourceTree = "<group>"; };
+		63B4239E1F24F16900F4C2DB /* SolutionGeometryMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolutionGeometryMaker.m; sourceTree = "<group>"; };
+		63B4239F1F24F16900F4C2DB /* SolutionState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolutionState.h; sourceTree = "<group>"; };
+		63B423A01F24F16900F4C2DB /* SolutionState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolutionState.m; sourceTree = "<group>"; };
+		63B423A11F24F16900F4C2DB /* VisualGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualGraph.h; sourceTree = "<group>"; };
+		63B423A21F24F16900F4C2DB /* VisualGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualGraph.m; sourceTree = "<group>"; };
+		63B423BB1F267B4400F4C2DB /* ErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandler.h; sourceTree = "<group>"; };
+		63B423BC1F267B4400F4C2DB /* ErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHandler.m; sourceTree = "<group>"; };
+		63B423BF1F26BB2C00F4C2DB /* PaletteList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteList.h; sourceTree = "<group>"; };
+		63B423C01F26BB2C00F4C2DB /* PaletteList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteList.m; sourceTree = "<group>"; };
+		63B423C31F27A8FF00F4C2DB /* Kami2NodeGeometryProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kami2NodeGeometryProvider.h; sourceTree = "<group>"; };
+		63B423C41F27A8FF00F4C2DB /* Kami2NodeGeometryProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kami2NodeGeometryProvider.m; sourceTree = "<group>"; };
+		63E543351F049A8D007F5846 /* ImageSelectedEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSelectedEvent.h; sourceTree = "<group>"; };
+		63E543361F049A8D007F5846 /* ImageSelectedEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSelectedEvent.m; sourceTree = "<group>"; };
+		63E543371F049A8D007F5846 /* StartSolverEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartSolverEvent.h; sourceTree = "<group>"; };
+		63E543381F049A8D007F5846 /* StartSolverEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartSolverEvent.m; sourceTree = "<group>"; };
+		63FAF4AD1EFC9320007B810E /* KamiSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KamiSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63FAF4B01EFC9320007B810E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63FAF4B21EFC9320007B810E /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63FAF4B51EFC9320007B810E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63FAF4BA1EFC9320007B810E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63FAF4BC1EFC9320007B810E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63FAF4C71EFC934A007B810E /* KamiSolverCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KamiSolverCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63FAF4C91EFC934A007B810E /* KamiSolverCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KamiSolverCore.h; sourceTree = "<group>"; };
+		63FAF4CA1EFC934A007B810E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63FAF4D41EFC936A007B810E /* Settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Settings.xcconfig; sourceTree = "<group>"; };
+		63FAF4D61EFC93CA007B810E /* ClickHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickHandler.h; sourceTree = "<group>"; };
+		63FAF4D71EFC93CA007B810E /* ClickHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickHandler.m; sourceTree = "<group>"; };
+		63FAF4D81EFC93CA007B810E /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		63FAF4D91EFC93CA007B810E /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
+		63FAF4DA1EFC93CA007B810E /* ColorCharacteristic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorCharacteristic.h; sourceTree = "<group>"; };
+		63FAF4DB1EFC93CA007B810E /* ColorCharacteristic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorCharacteristic.m; sourceTree = "<group>"; };
+		63FAF4DC1EFC93CA007B810E /* ConnectivityProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectivityProvider.h; sourceTree = "<group>"; };
+		63FAF4DD1EFC93CA007B810E /* ConnectivityProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectivityProvider.m; sourceTree = "<group>"; };
+		63FAF4DE1EFC93CA007B810E /* Convoluter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Convoluter.h; sourceTree = "<group>"; };
+		63FAF4DF1EFC93CA007B810E /* Convoluter_Override.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Convoluter_Override.m; sourceTree = "<group>"; };
+		63FAF4E01EFC93CA007B810E /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		63FAF4E11EFC93CA007B810E /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		63FAF4E21EFC93CA007B810E /* DumbSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DumbSearch.h; sourceTree = "<group>"; };
+		63FAF4E31EFC93CA007B810E /* DumbSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DumbSearch.m; sourceTree = "<group>"; };
+		63FAF4E41EFC93CA007B810E /* EdgeDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeDetector.h; sourceTree = "<group>"; };
+		63FAF4E51EFC93CA007B810E /* EdgeDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeDetector.m; sourceTree = "<group>"; };
+		63FAF4E61EFC93CA007B810E /* EdgeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeMap.h; sourceTree = "<group>"; };
+		63FAF4E71EFC93CA007B810E /* EdgeMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeMap.m; sourceTree = "<group>"; };
+		63FAF4E81EFC93CA007B810E /* EventPump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventPump.h; sourceTree = "<group>"; };
+		63FAF4E91EFC93CA007B810E /* EventPump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventPump.m; sourceTree = "<group>"; };
+		63FAF4EA1EFC93CA007B810E /* FastGraph_Override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastGraph_Override.h; sourceTree = "<group>"; };
+		63FAF4EB1EFC93CA007B810E /* FastGraph_Override.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastGraph_Override.m; sourceTree = "<group>"; };
+		63FAF4EC1EFC93CA007B810E /* GaussianBlurrer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaussianBlurrer.h; sourceTree = "<group>"; };
+		63FAF4ED1EFC93CA007B810E /* GaussianBlurrer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaussianBlurrer.m; sourceTree = "<group>"; };
+		63FAF4EE1EFC93CA007B810E /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		63FAF4EF1EFC93CA007B810E /* Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graph.m; sourceTree = "<group>"; };
+		63FAF4F01EFC93CA007B810E /* GraphExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphExtractor.h; sourceTree = "<group>"; };
+		63FAF4F11EFC93CA007B810E /* GraphExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphExtractor.m; sourceTree = "<group>"; };
+		63FAF4F21EFC93CA007B810E /* HandlerRegistration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandlerRegistration.h; sourceTree = "<group>"; };
+		63FAF4F31EFC93CA007B810E /* HandlerRegistration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandlerRegistration.m; sourceTree = "<group>"; };
+		63FAF4F41EFC93CA007B810E /* HasClickHandlers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasClickHandlers.h; sourceTree = "<group>"; };
+		63FAF4F51EFC93CA007B810E /* HasClickHandlers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasClickHandlers.m; sourceTree = "<group>"; };
+		63FAF4F61EFC93CA007B810E /* HasImageSelectedHandlers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasImageSelectedHandlers.h; sourceTree = "<group>"; };
+		63FAF4F71EFC93CA007B810E /* HasImageSelectedHandlers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasImageSelectedHandlers.m; sourceTree = "<group>"; };
+		63FAF4F81EFC93CA007B810E /* HasInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasInteger.h; sourceTree = "<group>"; };
+		63FAF4F91EFC93CA007B810E /* HasInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasInteger.m; sourceTree = "<group>"; };
+		63FAF4FA1EFC93CA007B810E /* HasText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasText.h; sourceTree = "<group>"; };
+		63FAF4FB1EFC93CA007B810E /* HasText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasText.m; sourceTree = "<group>"; };
+		63FAF4FC1EFC93CA007B810E /* HudOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudOrientation.h; sourceTree = "<group>"; };
+		63FAF4FD1EFC93CA007B810E /* HudOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudOrientation.m; sourceTree = "<group>"; };
+		63FAF4FE1EFC93CA007B810E /* HudParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudParser.h; sourceTree = "<group>"; };
+		63FAF4FF1EFC93CA007B810E /* HudParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudParser.m; sourceTree = "<group>"; };
+		63FAF5021EFC93CA007B810E /* ImageCharacteristic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCharacteristic.h; sourceTree = "<group>"; };
+		63FAF5031EFC93CA007B810E /* ImageCharacteristic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCharacteristic.m; sourceTree = "<group>"; };
+		63FAF5041EFC93CA007B810E /* ImageSelectedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSelectedHandler.h; sourceTree = "<group>"; };
+		63FAF5051EFC93CA007B810E /* ImageSelectedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSelectedHandler.m; sourceTree = "<group>"; };
+		63FAF5081EFC93CA007B810E /* Kami1ConnectivityProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kami1ConnectivityProvider.h; sourceTree = "<group>"; };
+		63FAF5091EFC93CA007B810E /* Kami1ConnectivityProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kami1ConnectivityProvider.m; sourceTree = "<group>"; };
+		63FAF50A1EFC93CA007B810E /* Kami1PuzzleAreaClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kami1PuzzleAreaClassifier.h; sourceTree = "<group>"; };
+		63FAF50B1EFC93CA007B810E /* Kami1PuzzleAreaClassifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kami1PuzzleAreaClassifier.m; sourceTree = "<group>"; };
+		63FAF50C1EFC93CA007B810E /* Kami2ConnectivityProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kami2ConnectivityProvider.h; sourceTree = "<group>"; };
+		63FAF50D1EFC93CA007B810E /* Kami2ConnectivityProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kami2ConnectivityProvider.m; sourceTree = "<group>"; };
+		63FAF50E1EFC93CA007B810E /* Kami2PuzzleAreaClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kami2PuzzleAreaClassifier.h; sourceTree = "<group>"; };
+		63FAF50F1EFC93CA007B810E /* Kami2PuzzleAreaClassifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kami2PuzzleAreaClassifier.m; sourceTree = "<group>"; };
+		63FAF5101EFC93CA007B810E /* KamiSolverPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KamiSolverPresenter.h; sourceTree = "<group>"; };
+		63FAF5111EFC93CA007B810E /* KamiSolverPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KamiSolverPresenter.m; sourceTree = "<group>"; };
+		63FAF5121EFC93CA007B810E /* KamiSolverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KamiSolverView.h; sourceTree = "<group>"; };
+		63FAF5131EFC93CA007B810E /* KamiSolverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KamiSolverView.m; sourceTree = "<group>"; };
+		63FAF5141EFC93CA007B810E /* KamiVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KamiVersion.h; sourceTree = "<group>"; };
+		63FAF5151EFC93CA007B810E /* KamiVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KamiVersion.m; sourceTree = "<group>"; };
+		63FAF5161EFC93CA007B810E /* KMeansClusterer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMeansClusterer.h; sourceTree = "<group>"; };
+		63FAF5171EFC93CA007B810E /* KMeansClusterer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMeansClusterer.m; sourceTree = "<group>"; };
+		63FAF5181EFC93CA007B810E /* Move.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Move.h; sourceTree = "<group>"; };
+		63FAF5191EFC93CA007B810E /* Move.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Move.m; sourceTree = "<group>"; };
+		63FAF51A1EFC93CA007B810E /* Palette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palette.h; sourceTree = "<group>"; };
+		63FAF51B1EFC93CA007B810E /* Palette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palette.m; sourceTree = "<group>"; };
+		63FAF51C1EFC93CA007B810E /* ParseException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseException.h; sourceTree = "<group>"; };
+		63FAF51D1EFC93CA007B810E /* ParseException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseException.m; sourceTree = "<group>"; };
+		63FAF51E1EFC93CA007B810E /* PathSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathSet.h; sourceTree = "<group>"; };
+		63FAF51F1EFC93CA007B810E /* PathSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathSet.m; sourceTree = "<group>"; };
+		63FAF5201EFC93CA007B810E /* PlayAreaDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayAreaDetector.h; sourceTree = "<group>"; };
+		63FAF5211EFC93CA007B810E /* PlayAreaDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayAreaDetector.m; sourceTree = "<group>"; };
+		63FAF5221EFC93CA007B810E /* PuzzleContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleContext.h; sourceTree = "<group>"; };
+		63FAF5231EFC93CA007B810E /* PuzzleContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleContext.m; sourceTree = "<group>"; };
+		63FAF5241EFC93CA007B810E /* PuzzleParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleParser.h; sourceTree = "<group>"; };
+		63FAF5251EFC93CA007B810E /* PuzzleParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleParser.m; sourceTree = "<group>"; };
+		63FAF5261EFC93CA007B810E /* Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Search.h; sourceTree = "<group>"; };
+		63FAF5271EFC93CA007B810E /* Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Search.m; sourceTree = "<group>"; };
+		63FAF5281EFC93CA007B810E /* VersionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionDetector.h; sourceTree = "<group>"; };
+		63FAF5291EFC93CA007B810E /* VersionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionDetector.m; sourceTree = "<group>"; };
+		63FAF52A1EFC93CA007B810E /* XMeansClusterer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMeansClusterer.h; sourceTree = "<group>"; };
+		63FAF52B1EFC93CA007B810E /* XMeansClusterer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMeansClusterer.m; sourceTree = "<group>"; };
+		63FAF5831EFC9595007B810E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		63FAF5851EFC95D1007B810E /* JSR305.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSR305.framework; path = "../../../../Applications/j2objc-1.3.1/frameworks/JSR305.framework"; sourceTree = "<group>"; };
+		63FAF5871EFC95DF007B810E /* Guava.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Guava.framework; path = "../../../../Applications/j2objc-1.3.1/frameworks/Guava.framework"; sourceTree = "<group>"; };
+		63FAF5891EFC960C007B810E /* JRE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JRE.framework; path = "../../../../Applications/j2objc-1.3.1/frameworks/JRE.framework"; sourceTree = "<group>"; };
+		63FAF58E1EFC98FB007B810E /* RookAndPawn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = RookAndPawn.svg; path = ../Resources/RookAndPawn.svg; sourceTree = "<group>"; };
+		63FAF5901EFC9ACF007B810E /* RookAndPawn */ = {isa = PBXFileReference; explicitFileType = image.png; name = RookAndPawn; path = ../Resources/RookAndPawn; sourceTree = "<group>"; };
+		65CBBC8F9DCDD7E079871DD8 /* Pods-KamiSolver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KamiSolver.release.xcconfig"; path = "Pods/Target Support Files/Pods-KamiSolver/Pods-KamiSolver.release.xcconfig"; sourceTree = "<group>"; };
+		6EB88B29FB41FCD6514503FA /* Pods_KamiSolver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KamiSolver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		791035482E5737F8D22B676D /* Pods-KamiSolverCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KamiSolverCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KamiSolverCore/Pods-KamiSolverCore.debug.xcconfig"; sourceTree = "<group>"; };
+		AFBB1925506A1774629D10A7 /* Pods-KamiSolverCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KamiSolverCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-KamiSolverCore/Pods-KamiSolverCore.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63FAF4AA1EFC9320007B810E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636F83E51F02B39100C43D95 /* libiconv.tbd in Frameworks */,
+				63FAF58C1EFC96A3007B810E /* Guava.framework in Frameworks */,
+				63FAF58B1EFC9683007B810E /* JRE.framework in Frameworks */,
+				63FAF4CE1EFC934A007B810E /* KamiSolverCore.framework in Frameworks */,
+				F87654561DF2A5F5F7F61926 /* Pods_KamiSolver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63FAF4C31EFC934A007B810E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FAF58A1EFC960C007B810E /* JRE.framework in Frameworks */,
+				63FAF5881EFC95DF007B810E /* Guava.framework in Frameworks */,
+				63FAF5861EFC95D1007B810E /* JSR305.framework in Frameworks */,
+				63FAF5841EFC9595007B810E /* UIKit.framework in Frameworks */,
+				B12784F1A4FA28F044AA3279 /* Pods_KamiSolverCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63FAF4A41EFC9320007B810E = {
+			isa = PBXGroup;
+			children = (
+				63FAF4D41EFC936A007B810E /* Settings.xcconfig */,
+				63FAF58D1EFC98E7007B810E /* Resources */,
+				63FAF4AF1EFC9320007B810E /* KamiSolver */,
+				63FAF4C81EFC934A007B810E /* KamiSolverCore */,
+				63FAF4AE1EFC9320007B810E /* Products */,
+				63FAF5821EFC9595007B810E /* Frameworks */,
+				9570A58C4B31846EA26B75E0 /* Pods */,
+			);
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		63FAF4AE1EFC9320007B810E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63FAF4AD1EFC9320007B810E /* KamiSolver.app */,
+				63FAF4C71EFC934A007B810E /* KamiSolverCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63FAF4AF1EFC9320007B810E /* KamiSolver */ = {
+			isa = PBXGroup;
+			children = (
+				636A6C611F2E6DB900F7B460 /* Assets.xcassets */,
+				63FAF4B01EFC9320007B810E /* AppDelegate.swift */,
+				634D3AFF1F02FA4F0032A676 /* IosImage.swift */,
+				634D3B011F041EBA0032A676 /* RGBA32.swift */,
+				63FAF4B21EFC9320007B810E /* ViewController.swift */,
+				63150F861F295DD000992FB1 /* SolutionViewController.swift */,
+				63150F841F2927B300992FB1 /* SolutionTileViewController.swift */,
+				63FAF4B41EFC9320007B810E /* Main.storyboard */,
+				63FAF4B91EFC9320007B810E /* LaunchScreen.storyboard */,
+				63FAF4BC1EFC9320007B810E /* Info.plist */,
+			);
+			path = KamiSolver;
+			sourceTree = "<group>";
+		};
+		63FAF4C81EFC934A007B810E /* KamiSolverCore */ = {
+			isa = PBXGroup;
+			children = (
+				63B423C31F27A8FF00F4C2DB /* Kami2NodeGeometryProvider.h */,
+				63B423C41F27A8FF00F4C2DB /* Kami2NodeGeometryProvider.m */,
+				63B423BF1F26BB2C00F4C2DB /* PaletteList.h */,
+				63B423C01F26BB2C00F4C2DB /* PaletteList.m */,
+				63B423BB1F267B4400F4C2DB /* ErrorHandler.h */,
+				63B423BC1F267B4400F4C2DB /* ErrorHandler.m */,
+				63B4238B1F24F16900F4C2DB /* Arrow.h */,
+				63B4238C1F24F16900F4C2DB /* Arrow.m */,
+				63B4238D1F24F16900F4C2DB /* Kami1NodeGeometryProvider.h */,
+				63B4238E1F24F16900F4C2DB /* Kami1NodeGeometryProvider.m */,
+				63B4238F1F24F16900F4C2DB /* NodeGeometry.h */,
+				63B423901F24F16900F4C2DB /* NodeGeometry.m */,
+				63B423911F24F16900F4C2DB /* NodeGeometryProvider.h */,
+				63B423921F24F16900F4C2DB /* NodeGeometryProvider.m */,
+				63B423931F24F16900F4C2DB /* Point.h */,
+				63B423941F24F16900F4C2DB /* Point.m */,
+				63B423951F24F16900F4C2DB /* PointList.h */,
+				63B423961F24F16900F4C2DB /* PointList.m */,
+				63B423971F24F16900F4C2DB /* Rectangle.h */,
+				63B423981F24F16900F4C2DB /* Rectangle.m */,
+				63B423991F24F16900F4C2DB /* SolutionGeometry.h */,
+				63B4239A1F24F16900F4C2DB /* SolutionGeometry.m */,
+				63B4239B1F24F16900F4C2DB /* SolutionGeometryList.h */,
+				63B4239C1F24F16900F4C2DB /* SolutionGeometryList.m */,
+				63B4239D1F24F16900F4C2DB /* SolutionGeometryMaker.h */,
+				63B4239E1F24F16900F4C2DB /* SolutionGeometryMaker.m */,
+				63B4239F1F24F16900F4C2DB /* SolutionState.h */,
+				63B423A01F24F16900F4C2DB /* SolutionState.m */,
+				63B423A11F24F16900F4C2DB /* VisualGraph.h */,
+				63B423A21F24F16900F4C2DB /* VisualGraph.m */,
+				63E543351F049A8D007F5846 /* ImageSelectedEvent.h */,
+				63E543361F049A8D007F5846 /* ImageSelectedEvent.m */,
+				63E543371F049A8D007F5846 /* StartSolverEvent.h */,
+				63E543381F049A8D007F5846 /* StartSolverEvent.m */,
+				634D3B031F042F590032A676 /* KamiImage.h */,
+				634D3B041F042F590032A676 /* KamiImage.m */,
+				63FAF4D61EFC93CA007B810E /* ClickHandler.h */,
+				63FAF4D71EFC93CA007B810E /* ClickHandler.m */,
+				63FAF4D81EFC93CA007B810E /* Color.h */,
+				63FAF4D91EFC93CA007B810E /* Color.m */,
+				63FAF4DA1EFC93CA007B810E /* ColorCharacteristic.h */,
+				63FAF4DB1EFC93CA007B810E /* ColorCharacteristic.m */,
+				63FAF4DC1EFC93CA007B810E /* ConnectivityProvider.h */,
+				63FAF4DD1EFC93CA007B810E /* ConnectivityProvider.m */,
+				63FAF4DE1EFC93CA007B810E /* Convoluter.h */,
+				63FAF4DF1EFC93CA007B810E /* Convoluter_Override.m */,
+				63FAF4E01EFC93CA007B810E /* Device.h */,
+				63FAF4E11EFC93CA007B810E /* Device.m */,
+				63FAF4E21EFC93CA007B810E /* DumbSearch.h */,
+				63FAF4E31EFC93CA007B810E /* DumbSearch.m */,
+				63FAF4E41EFC93CA007B810E /* EdgeDetector.h */,
+				63FAF4E51EFC93CA007B810E /* EdgeDetector.m */,
+				63FAF4E61EFC93CA007B810E /* EdgeMap.h */,
+				63FAF4E71EFC93CA007B810E /* EdgeMap.m */,
+				63FAF4E81EFC93CA007B810E /* EventPump.h */,
+				63FAF4E91EFC93CA007B810E /* EventPump.m */,
+				63FAF4EA1EFC93CA007B810E /* FastGraph_Override.h */,
+				63FAF4EB1EFC93CA007B810E /* FastGraph_Override.m */,
+				63FAF4EC1EFC93CA007B810E /* GaussianBlurrer.h */,
+				63FAF4ED1EFC93CA007B810E /* GaussianBlurrer.m */,
+				63FAF4EE1EFC93CA007B810E /* Graph.h */,
+				63FAF4EF1EFC93CA007B810E /* Graph.m */,
+				63FAF4F01EFC93CA007B810E /* GraphExtractor.h */,
+				63FAF4F11EFC93CA007B810E /* GraphExtractor.m */,
+				63FAF4F21EFC93CA007B810E /* HandlerRegistration.h */,
+				63FAF4F31EFC93CA007B810E /* HandlerRegistration.m */,
+				63FAF4F41EFC93CA007B810E /* HasClickHandlers.h */,
+				63FAF4F51EFC93CA007B810E /* HasClickHandlers.m */,
+				63FAF4F61EFC93CA007B810E /* HasImageSelectedHandlers.h */,
+				63FAF4F71EFC93CA007B810E /* HasImageSelectedHandlers.m */,
+				63FAF4F81EFC93CA007B810E /* HasInteger.h */,
+				63FAF4F91EFC93CA007B810E /* HasInteger.m */,
+				63FAF4FA1EFC93CA007B810E /* HasText.h */,
+				63FAF4FB1EFC93CA007B810E /* HasText.m */,
+				63FAF4FC1EFC93CA007B810E /* HudOrientation.h */,
+				63FAF4FD1EFC93CA007B810E /* HudOrientation.m */,
+				63FAF4FE1EFC93CA007B810E /* HudParser.h */,
+				63FAF4FF1EFC93CA007B810E /* HudParser.m */,
+				63FAF5021EFC93CA007B810E /* ImageCharacteristic.h */,
+				63FAF5031EFC93CA007B810E /* ImageCharacteristic.m */,
+				63FAF5041EFC93CA007B810E /* ImageSelectedHandler.h */,
+				63FAF5051EFC93CA007B810E /* ImageSelectedHandler.m */,
+				63FAF5081EFC93CA007B810E /* Kami1ConnectivityProvider.h */,
+				63FAF5091EFC93CA007B810E /* Kami1ConnectivityProvider.m */,
+				63FAF50A1EFC93CA007B810E /* Kami1PuzzleAreaClassifier.h */,
+				63FAF50B1EFC93CA007B810E /* Kami1PuzzleAreaClassifier.m */,
+				63FAF50C1EFC93CA007B810E /* Kami2ConnectivityProvider.h */,
+				63FAF50D1EFC93CA007B810E /* Kami2ConnectivityProvider.m */,
+				63FAF50E1EFC93CA007B810E /* Kami2PuzzleAreaClassifier.h */,
+				63FAF50F1EFC93CA007B810E /* Kami2PuzzleAreaClassifier.m */,
+				63FAF5101EFC93CA007B810E /* KamiSolverPresenter.h */,
+				63FAF5111EFC93CA007B810E /* KamiSolverPresenter.m */,
+				63FAF5121EFC93CA007B810E /* KamiSolverView.h */,
+				63FAF5131EFC93CA007B810E /* KamiSolverView.m */,
+				63FAF5141EFC93CA007B810E /* KamiVersion.h */,
+				63FAF5151EFC93CA007B810E /* KamiVersion.m */,
+				63FAF5161EFC93CA007B810E /* KMeansClusterer.h */,
+				63FAF5171EFC93CA007B810E /* KMeansClusterer.m */,
+				63FAF5181EFC93CA007B810E /* Move.h */,
+				63FAF5191EFC93CA007B810E /* Move.m */,
+				63FAF51A1EFC93CA007B810E /* Palette.h */,
+				63FAF51B1EFC93CA007B810E /* Palette.m */,
+				63FAF51C1EFC93CA007B810E /* ParseException.h */,
+				63FAF51D1EFC93CA007B810E /* ParseException.m */,
+				63FAF51E1EFC93CA007B810E /* PathSet.h */,
+				63FAF51F1EFC93CA007B810E /* PathSet.m */,
+				63FAF5201EFC93CA007B810E /* PlayAreaDetector.h */,
+				63FAF5211EFC93CA007B810E /* PlayAreaDetector.m */,
+				63FAF5221EFC93CA007B810E /* PuzzleContext.h */,
+				63FAF5231EFC93CA007B810E /* PuzzleContext.m */,
+				63FAF5241EFC93CA007B810E /* PuzzleParser.h */,
+				63FAF5251EFC93CA007B810E /* PuzzleParser.m */,
+				63FAF5261EFC93CA007B810E /* Search.h */,
+				63FAF5271EFC93CA007B810E /* Search.m */,
+				63FAF5281EFC93CA007B810E /* VersionDetector.h */,
+				63FAF5291EFC93CA007B810E /* VersionDetector.m */,
+				63FAF52A1EFC93CA007B810E /* XMeansClusterer.h */,
+				63FAF52B1EFC93CA007B810E /* XMeansClusterer.m */,
+				63FAF4C91EFC934A007B810E /* KamiSolverCore.h */,
+				63FAF4CA1EFC934A007B810E /* Info.plist */,
+			);
+			path = KamiSolverCore;
+			sourceTree = "<group>";
+		};
+		63FAF5821EFC9595007B810E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				636F83E31F02A9B100C43D95 /* DerivedData */,
+				636F83E11F02A8FB00C43D95 /* libiconv.2.tbd */,
+				636F83DE1F02924200C43D95 /* libiconv.tbd */,
+				636F83DC1F02921E00C43D95 /* libiconv.2.4.0.tbd */,
+				63FAF5891EFC960C007B810E /* JRE.framework */,
+				63FAF5871EFC95DF007B810E /* Guava.framework */,
+				63FAF5851EFC95D1007B810E /* JSR305.framework */,
+				63FAF5831EFC9595007B810E /* UIKit.framework */,
+				6EB88B29FB41FCD6514503FA /* Pods_KamiSolver.framework */,
+				0CA0C5157E50415DF267FC3B /* Pods_KamiSolverCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63FAF58D1EFC98E7007B810E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63FAF58E1EFC98FB007B810E /* RookAndPawn.svg */,
+				63FAF5901EFC9ACF007B810E /* RookAndPawn */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9570A58C4B31846EA26B75E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BC02BA62C900414BE0E6341 /* Pods-KamiSolver.debug.xcconfig */,
+				65CBBC8F9DCDD7E079871DD8 /* Pods-KamiSolver.release.xcconfig */,
+				791035482E5737F8D22B676D /* Pods-KamiSolverCore.debug.xcconfig */,
+				AFBB1925506A1774629D10A7 /* Pods-KamiSolverCore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		63FAF4C41EFC934A007B810E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FAF53C1EFC93CA007B810E /* EdgeMap.h in Headers */,
+				63FAF5401EFC93CA007B810E /* FastGraph_Override.h in Headers */,
+				63FAF57C1EFC93CA007B810E /* Search.h in Headers */,
+				63B423B71F24F16900F4C2DB /* SolutionState.h in Headers */,
+				63B423C11F26BB2C00F4C2DB /* PaletteList.h in Headers */,
+				63FAF5741EFC93CA007B810E /* PathSet.h in Headers */,
+				63B423A31F24F16900F4C2DB /* Arrow.h in Headers */,
+				63B423B31F24F16900F4C2DB /* SolutionGeometryList.h in Headers */,
+				63FAF55E1EFC93CA007B810E /* Kami1ConnectivityProvider.h in Headers */,
+				63B423A91F24F16900F4C2DB /* NodeGeometryProvider.h in Headers */,
+				63B423A71F24F16900F4C2DB /* NodeGeometry.h in Headers */,
+				63FAF5381EFC93CA007B810E /* DumbSearch.h in Headers */,
+				63FAF52E1EFC93CA007B810E /* Color.h in Headers */,
+				63FAF54E1EFC93CA007B810E /* HasInteger.h in Headers */,
+				63B423AD1F24F16900F4C2DB /* PointList.h in Headers */,
+				63FAF5541EFC93CA007B810E /* HudParser.h in Headers */,
+				63FAF5621EFC93CA007B810E /* Kami2ConnectivityProvider.h in Headers */,
+				63B423AB1F24F16900F4C2DB /* Point.h in Headers */,
+				63B423C51F27A8FF00F4C2DB /* Kami2NodeGeometryProvider.h in Headers */,
+				63FAF5481EFC93CA007B810E /* HandlerRegistration.h in Headers */,
+				63B423BD1F267B4400F4C2DB /* ErrorHandler.h in Headers */,
+				63FAF5601EFC93CA007B810E /* Kami1PuzzleAreaClassifier.h in Headers */,
+				63E5433B1F049A8D007F5846 /* StartSolverEvent.h in Headers */,
+				63B423B51F24F16900F4C2DB /* SolutionGeometryMaker.h in Headers */,
+				63FAF5761EFC93CA007B810E /* PlayAreaDetector.h in Headers */,
+				63FAF57A1EFC93CA007B810E /* PuzzleParser.h in Headers */,
+				63FAF54A1EFC93CA007B810E /* HasClickHandlers.h in Headers */,
+				63FAF56A1EFC93CA007B810E /* KamiVersion.h in Headers */,
+				63FAF5661EFC93CA007B810E /* KamiSolverPresenter.h in Headers */,
+				63FAF55A1EFC93CA007B810E /* ImageSelectedHandler.h in Headers */,
+				63B423B11F24F16900F4C2DB /* SolutionGeometry.h in Headers */,
+				63FAF5361EFC93CA007B810E /* Device.h in Headers */,
+				63FAF5501EFC93CA007B810E /* HasText.h in Headers */,
+				63B423A51F24F16900F4C2DB /* Kami1NodeGeometryProvider.h in Headers */,
+				63FAF5641EFC93CA007B810E /* Kami2PuzzleAreaClassifier.h in Headers */,
+				63B423B91F24F16900F4C2DB /* VisualGraph.h in Headers */,
+				63FAF5781EFC93CA007B810E /* PuzzleContext.h in Headers */,
+				63FAF5801EFC93CA007B810E /* XMeansClusterer.h in Headers */,
+				63FAF53A1EFC93CA007B810E /* EdgeDetector.h in Headers */,
+				63FAF56E1EFC93CA007B810E /* Move.h in Headers */,
+				63FAF5521EFC93CA007B810E /* HudOrientation.h in Headers */,
+				63FAF52C1EFC93CA007B810E /* ClickHandler.h in Headers */,
+				63FAF5421EFC93CA007B810E /* GaussianBlurrer.h in Headers */,
+				63FAF5581EFC93CA007B810E /* ImageCharacteristic.h in Headers */,
+				634D3B051F042F590032A676 /* KamiImage.h in Headers */,
+				63FAF5321EFC93CA007B810E /* ConnectivityProvider.h in Headers */,
+				63FAF53E1EFC93CA007B810E /* EventPump.h in Headers */,
+				63FAF57E1EFC93CA007B810E /* VersionDetector.h in Headers */,
+				63FAF5721EFC93CA007B810E /* ParseException.h in Headers */,
+				63FAF5341EFC93CA007B810E /* Convoluter.h in Headers */,
+				63B423AF1F24F16900F4C2DB /* Rectangle.h in Headers */,
+				63FAF56C1EFC93CA007B810E /* KMeansClusterer.h in Headers */,
+				63E543391F049A8D007F5846 /* ImageSelectedEvent.h in Headers */,
+				63FAF5441EFC93CA007B810E /* Graph.h in Headers */,
+				63FAF5701EFC93CA007B810E /* Palette.h in Headers */,
+				63FAF4CB1EFC934A007B810E /* KamiSolverCore.h in Headers */,
+				63FAF5301EFC93CA007B810E /* ColorCharacteristic.h in Headers */,
+				63FAF5461EFC93CA007B810E /* GraphExtractor.h in Headers */,
+				63FAF5681EFC93CA007B810E /* KamiSolverView.h in Headers */,
+				63FAF54C1EFC93CA007B810E /* HasImageSelectedHandlers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		63FAF4AC1EFC9320007B810E /* KamiSolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63FAF4BF1EFC9320007B810E /* Build configuration list for PBXNativeTarget "KamiSolver" */;
+			buildPhases = (
+				99DBFCECB9997582408C91C3 /* [CP] Check Pods Manifest.lock */,
+				63FAF4A91EFC9320007B810E /* Sources */,
+				63FAF4AA1EFC9320007B810E /* Frameworks */,
+				63FAF4AB1EFC9320007B810E /* Resources */,
+				63FAF4D31EFC934A007B810E /* Embed Frameworks */,
+				1CC4FCECDF71649FFBAF6CCB /* [CP] Embed Pods Frameworks */,
+				37495D8E99223D552608F709 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63FAF4CD1EFC934A007B810E /* PBXTargetDependency */,
+			);
+			name = KamiSolver;
+			productName = KamiSolver;
+			productReference = 63FAF4AD1EFC9320007B810E /* KamiSolver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63FAF4C61EFC934A007B810E /* KamiSolverCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63FAF4D21EFC934A007B810E /* Build configuration list for PBXNativeTarget "KamiSolverCore" */;
+			buildPhases = (
+				EFB6BA1EDDEF219132B466B3 /* [CP] Check Pods Manifest.lock */,
+				63FAF4C21EFC934A007B810E /* Sources */,
+				63FAF4C31EFC934A007B810E /* Frameworks */,
+				63FAF4C41EFC934A007B810E /* Headers */,
+				63FAF4C51EFC934A007B810E /* Resources */,
+				7F325E099A9A876B7FD887F0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KamiSolverCore;
+			productName = KamiSolverCore;
+			productReference = 63FAF4C71EFC934A007B810E /* KamiSolverCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63FAF4A51EFC9320007B810E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Rook And Pawn Industries, Inc.";
+				TargetAttributes = {
+					63FAF4AC1EFC9320007B810E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = N8F6RS8578;
+						ProvisioningStyle = Automatic;
+					};
+					63FAF4C61EFC934A007B810E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = N8F6RS8578;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 63FAF4A81EFC9320007B810E /* Build configuration list for PBXProject "KamiSolver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63FAF4A41EFC9320007B810E;
+			productRefGroup = 63FAF4AE1EFC9320007B810E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63FAF4AC1EFC9320007B810E /* KamiSolver */,
+				63FAF4C61EFC934A007B810E /* KamiSolverCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63FAF4AB1EFC9320007B810E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FAF4BB1EFC9320007B810E /* LaunchScreen.storyboard in Resources */,
+				63FAF4D51EFC936A007B810E /* Settings.xcconfig in Resources */,
+				63FAF4B61EFC9320007B810E /* Main.storyboard in Resources */,
+				636F83E61F02B8C000C43D95 /* RookAndPawn in Resources */,
+				636A6C621F2E6DB900F7B460 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63FAF4C51EFC934A007B810E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FAF58F1EFC98FB007B810E /* RookAndPawn.svg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CC4FCECDF71649FFBAF6CCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KamiSolver/Pods-KamiSolver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37495D8E99223D552608F709 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KamiSolver/Pods-KamiSolver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F325E099A9A876B7FD887F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KamiSolverCore/Pods-KamiSolverCore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99DBFCECB9997582408C91C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFB6BA1EDDEF219132B466B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63FAF4A91EFC9320007B810E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634D3B021F041EBA0032A676 /* RGBA32.swift in Sources */,
+				63150F871F295DD000992FB1 /* SolutionViewController.swift in Sources */,
+				634D3B001F02FA4F0032A676 /* IosImage.swift in Sources */,
+				63FAF4B31EFC9320007B810E /* ViewController.swift in Sources */,
+				63FAF4B11EFC9320007B810E /* AppDelegate.swift in Sources */,
+				63150F851F2927B300992FB1 /* SolutionTileViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63FAF4C21EFC934A007B810E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FAF57B1EFC93CA007B810E /* PuzzleParser.m in Sources */,
+				63E5433A1F049A8D007F5846 /* ImageSelectedEvent.m in Sources */,
+				63FAF5751EFC93CA007B810E /* PathSet.m in Sources */,
+				63B423A41F24F16900F4C2DB /* Arrow.m in Sources */,
+				63FAF5631EFC93CA007B810E /* Kami2ConnectivityProvider.m in Sources */,
+				63FAF54B1EFC93CA007B810E /* HasClickHandlers.m in Sources */,
+				63FAF56D1EFC93CA007B810E /* KMeansClusterer.m in Sources */,
+				63B423AC1F24F16900F4C2DB /* Point.m in Sources */,
+				63FAF5491EFC93CA007B810E /* HandlerRegistration.m in Sources */,
+				63B423BE1F267B4400F4C2DB /* ErrorHandler.m in Sources */,
+				63FAF53F1EFC93CA007B810E /* EventPump.m in Sources */,
+				63FAF5511EFC93CA007B810E /* HasText.m in Sources */,
+				63FAF54D1EFC93CA007B810E /* HasImageSelectedHandlers.m in Sources */,
+				63FAF53B1EFC93CA007B810E /* EdgeDetector.m in Sources */,
+				63FAF5811EFC93CA007B810E /* XMeansClusterer.m in Sources */,
+				63B423B21F24F16900F4C2DB /* SolutionGeometry.m in Sources */,
+				63B423B81F24F16900F4C2DB /* SolutionState.m in Sources */,
+				63B423C21F26BB2C00F4C2DB /* PaletteList.m in Sources */,
+				63FAF54F1EFC93CA007B810E /* HasInteger.m in Sources */,
+				63FAF5351EFC93CA007B810E /* Convoluter_Override.m in Sources */,
+				63FAF5471EFC93CA007B810E /* GraphExtractor.m in Sources */,
+				63FAF52D1EFC93CA007B810E /* ClickHandler.m in Sources */,
+				63FAF5691EFC93CA007B810E /* KamiSolverView.m in Sources */,
+				634D3B061F042F590032A676 /* KamiImage.m in Sources */,
+				63FAF5551EFC93CA007B810E /* HudParser.m in Sources */,
+				63FAF5791EFC93CA007B810E /* PuzzleContext.m in Sources */,
+				63E5433C1F049A8D007F5846 /* StartSolverEvent.m in Sources */,
+				63B423A61F24F16900F4C2DB /* Kami1NodeGeometryProvider.m in Sources */,
+				63FAF5671EFC93CA007B810E /* KamiSolverPresenter.m in Sources */,
+				63FAF56B1EFC93CA007B810E /* KamiVersion.m in Sources */,
+				63FAF5591EFC93CA007B810E /* ImageCharacteristic.m in Sources */,
+				63FAF53D1EFC93CA007B810E /* EdgeMap.m in Sources */,
+				63B423AE1F24F16900F4C2DB /* PointList.m in Sources */,
+				63FAF5431EFC93CA007B810E /* GaussianBlurrer.m in Sources */,
+				63FAF5651EFC93CA007B810E /* Kami2PuzzleAreaClassifier.m in Sources */,
+				63FAF52F1EFC93CA007B810E /* Color.m in Sources */,
+				63B423B01F24F16900F4C2DB /* Rectangle.m in Sources */,
+				63B423B41F24F16900F4C2DB /* SolutionGeometryList.m in Sources */,
+				63FAF5411EFC93CA007B810E /* FastGraph_Override.m in Sources */,
+				63B423A81F24F16900F4C2DB /* NodeGeometry.m in Sources */,
+				63FAF5371EFC93CA007B810E /* Device.m in Sources */,
+				63FAF5611EFC93CA007B810E /* Kami1PuzzleAreaClassifier.m in Sources */,
+				63B423B61F24F16900F4C2DB /* SolutionGeometryMaker.m in Sources */,
+				63FAF5711EFC93CA007B810E /* Palette.m in Sources */,
+				63FAF5771EFC93CA007B810E /* PlayAreaDetector.m in Sources */,
+				63B423C61F27A8FF00F4C2DB /* Kami2NodeGeometryProvider.m in Sources */,
+				63FAF55F1EFC93CA007B810E /* Kami1ConnectivityProvider.m in Sources */,
+				63FAF5451EFC93CA007B810E /* Graph.m in Sources */,
+				63FAF5731EFC93CA007B810E /* ParseException.m in Sources */,
+				63FAF55B1EFC93CA007B810E /* ImageSelectedHandler.m in Sources */,
+				63FAF5531EFC93CA007B810E /* HudOrientation.m in Sources */,
+				63FAF57D1EFC93CA007B810E /* Search.m in Sources */,
+				63FAF5311EFC93CA007B810E /* ColorCharacteristic.m in Sources */,
+				63FAF5331EFC93CA007B810E /* ConnectivityProvider.m in Sources */,
+				63FAF56F1EFC93CA007B810E /* Move.m in Sources */,
+				63FAF57F1EFC93CA007B810E /* VersionDetector.m in Sources */,
+				63B423AA1F24F16900F4C2DB /* NodeGeometryProvider.m in Sources */,
+				63B423BA1F24F16900F4C2DB /* VisualGraph.m in Sources */,
+				63FAF5391EFC93CA007B810E /* DumbSearch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63FAF4CD1EFC934A007B810E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63FAF4C61EFC934A007B810E /* KamiSolverCore */;
+			targetProxy = 63FAF4CC1EFC934A007B810E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63FAF4B41EFC9320007B810E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63FAF4B51EFC9320007B810E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63FAF4B91EFC9320007B810E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63FAF4BA1EFC9320007B810E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63FAF4BD1EFC9320007B810E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63FAF4D41EFC936A007B810E /* Settings.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63FAF4BE1EFC9320007B810E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63FAF4D41EFC936A007B810E /* Settings.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63FAF4C01EFC9320007B810E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC02BA62C900414BE0E6341 /* Pods-KamiSolver.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N8F6RS8578;
+				INFOPLIST_FILE = KamiSolver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rookandpawn.KamiSolver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		63FAF4C11EFC9320007B810E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65CBBC8F9DCDD7E079871DD8 /* Pods-KamiSolver.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N8F6RS8578;
+				INFOPLIST_FILE = KamiSolver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rookandpawn.KamiSolver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		63FAF4D01EFC934A007B810E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 791035482E5737F8D22B676D /* Pods-KamiSolverCore.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N8F6RS8578;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KamiSolverCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rookandpawn.KamiSolverCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63FAF4D11EFC934A007B810E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFBB1925506A1774629D10A7 /* Pods-KamiSolverCore.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N8F6RS8578;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KamiSolverCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rookandpawn.KamiSolverCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63FAF4A81EFC9320007B810E /* Build configuration list for PBXProject "KamiSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63FAF4BD1EFC9320007B810E /* Debug */,
+				63FAF4BE1EFC9320007B810E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63FAF4BF1EFC9320007B810E /* Build configuration list for PBXNativeTarget "KamiSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63FAF4C01EFC9320007B810E /* Debug */,
+				63FAF4C11EFC9320007B810E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63FAF4D21EFC934A007B810E /* Build configuration list for PBXNativeTarget "KamiSolverCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63FAF4D01EFC934A007B810E /* Debug */,
+				63FAF4D11EFC934A007B810E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63FAF4A51EFC9320007B810E /* Project object */;
+}

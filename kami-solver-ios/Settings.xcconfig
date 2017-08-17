@@ -1,0 +1,8 @@
+
+J2OBJC_HOME = Somewhere/Applications/j2objc-2.0.2
+
+HEADER_SEARCH_PATHS = ${J2OBJC_HOME}/frameworks/JRE.framework/Headers ${J2OBJC_HOME}/frameworks/Guava.framework/Headers ${J2OBJC_HOME}/frameworks/JSR305.framework/Headers;
+
+FRAMEWORK_SEARCH_PATHS = "${J2OBJC_HOME}/frameworks";
+LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
+OTHER_LDFLAGS = -liconv
